@@ -1,0 +1,4 @@
+{
+    "layout": "blog-navbar.njk",
+    "tags": ["blog"]
+}

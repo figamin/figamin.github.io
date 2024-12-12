@@ -1,0 +1,53 @@
+:root {
+    --background-color: #1d1f21;
+    /*--input-color: #282a2e;*/
+    --reply-color: #242629;
+    --reply-border-color: #848484;
+    --input-border-color: #111;
+    --text-color: #c5c8c6;
+    --link-color: #9ab9f2;
+    --link-hover-color: #81a2be;
+    --subject-color: #ed7db6;
+    --name-color: #7fedb5;
+    --capcode-color: #ff8a8a;
+    --sauce-color: #ffadff;
+    --wapchan-yellow: #fffe00;
+}
+body {
+    background: #1d1f21;
+    color: #c5c8c6;
+    
+}
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+a:hover {
+	color: var(--link-hover-color);
+}
+footer {
+    font-size: 80%;
+}
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+#nav {
+    border: 1px solid var(--reply-border-color);
+    display: inline-flex;
+    flex-direction: column;
+}
+#welcome {
+    flex-direction: column;
+    text-align: center;
+}
+#welcome pre {
+    display: inline-block;
+    text-align: left;
+}
+ul {
+    list-style-position: inside;
+}
+li::marker {
+    content: '>';
+  }
