@@ -1,4 +1,0 @@
----
-title: UY - Lum
----
-Lum
