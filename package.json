@@ -2,6 +2,7 @@
   "name": "figamin.net",
   "version": "1.0.0",
   "description": "my site (new)",
+  "type": "module",
   "main": "eleventy.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +18,11 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
