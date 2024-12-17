@@ -1,3 +1,190 @@
+@font-face {
+    font-family: "Comic Sans Pixelated 16";
+    src: url("fonts/Comic-Sans-Pixelated-16-Regular.woff2") format("woff2"),
+    url("fonts/Comic-Sans-Pixelated-16-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Comic Sans Pixelated 16";
+    src: url("fonts/Comic-Sans-Pixelated-16-Bold.woff2") format("woff2"),
+    url("fonts/Comic-Sans-Pixelated-16-Bold.woff") format("woff");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Comic Sans Pixelated 24";
+    src: url("fonts/Comic-Sans-Pixelated-24-Regular.woff2") format("woff2"),
+    url("fonts/Comic-Sans-Pixelated-24-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Comic Sans Pixelated 24";
+    src: url("fonts/Comic-Sans-Pixelated-24-Bold.woff2") format("woff2"),
+    url("fonts/Comic-Sans-Pixelated-24-Bold.woff") format("woff");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Comic Sans Pixelated 32";
+    src: url("fonts/Comic-Sans-Pixelated-32-Regular.woff2") format("woff2"),
+    url("fonts/Comic-Sans-Pixelated-32-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Comic Sans Pixelated 32";
+    src: url("fonts/Comic-Sans-Pixelated-32-Bold.woff2") format("woff2"),
+    url("fonts/Comic-Sans-Pixelated-32-Bold.woff") format("woff");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Courier Pixelated 16";
+    src: url("fonts/Courier-Pixelated-16-Regular.woff2") format("woff2"),
+    url("fonts/Courier-Pixelated-16-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Courier Pixelated 16";
+    src: url("fonts/Courier-Pixelated-16-Bold.woff2") format("woff2"),
+    url("fonts/Courier-Pixelated-16-Bold.woff") format("woff");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Courier Pixelated 16";
+    src: url("fonts/Courier-Pixelated-16-Italic.woff2") format("woff2"),
+    url("fonts/Courier-Pixelated-16-Italic.woff") format("woff");
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Courier Pixelated 16";
+    src: url("fonts/Courier-Pixelated-16-BoldItalic.woff2") format("woff2"),
+    url("fonts/Courier-Pixelated-16-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Courier Pixelated 24";
+    src: url("fonts/Courier-Pixelated-24-Regular.woff2") format("woff2"),
+    url("fonts/Courier-Pixelated-24-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Courier Pixelated 24";
+    src: url("fonts/Courier-Pixelated-24-Bold.woff2") format("woff2"),
+    url("fonts/Courier-Pixelated-24-Bold.woff") format("woff");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Courier Pixelated 24";
+    src: url("fonts/Courier-Pixelated-24-Italic.woff2") format("woff2"),
+    url("fonts/Courier-Pixelated-24-Italic.woff") format("woff");
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Courier Pixelated 24";
+    src: url("fonts/Courier-Pixelated-24-BoldItalic.woff2") format("woff2"),
+    url("fonts/Courier-Pixelated-24-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Courier Pixelated 32";
+    src: url("fonts/Courier-Pixelated-32-Regular.woff2") format("woff2"),
+    url("fonts/Courier-Pixelated-32-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Courier Pixelated 32";
+    src: url("fonts/Courier-Pixelated-32-Bold.woff2") format("woff2"),
+    url("fonts/Courier-Pixelated-32-Bold.woff") format("woff");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Courier Pixelated 32";
+    src: url("fonts/Courier-Pixelated-32-Italic.woff2") format("woff2"),
+    url("fonts/Courier-Pixelated-32-Italic.woff") format("woff");
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Courier Pixelated 32";
+    src: url("fonts/Courier-Pixelated-32-BoldItalic.woff2") format("woff2"),
+    url("fonts/Courier-Pixelated-32-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "MS Sans Pixelated 13";
+    src: url("fonts/MS-Sans-Pixelated-13-Regular.woff2") format("woff2"),
+    url("fonts/MS-Sans-Pixelated-13-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "MS Sans Pixelated 17";
+    src: url("fonts/MS-Sans-Pixelated-17-Regular.woff2") format("woff2"),
+    url("fonts/MS-Sans-Pixelated-17-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Times Pixelated 16";
+    src: url("fonts/Times-Pixelated-16-Regular.woff2") format("woff2"),
+    url("fonts/Times-Pixelated-16-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Times Pixelated 16";
+    src: url("fonts/Times-Pixelated-16-Bold.woff2") format("woff2"),
+    url("fonts/Times-Pixelated-16-Bold.woff") format("woff");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Times Pixelated 16";
+    src: url("fonts/Times-Pixelated-16-Italic.woff2") format("woff2"),
+    url("fonts/Times-Pixelated-16-Italic.woff") format("woff");
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Times Pixelated 16";
+    src: url("fonts/Times-Pixelated-16-BoldItalic.woff2") format("woff2"),
+    url("fonts/Times-Pixelated-16-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Times Pixelated 24";
+    src: url("fonts/Times-Pixelated-24-Regular.woff2") format("woff2"),
+    url("fonts/Times-Pixelated-24-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Times Pixelated 24";
+    src: url("fonts/Times-Pixelated-24-Bold.woff2") format("woff2"),
+    url("fonts/Times-Pixelated-24-Bold.woff") format("woff");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Times Pixelated 24";
+    src: url("fonts/Times-Pixelated-24-Italic.woff2") format("woff2"),
+    url("fonts/Times-Pixelated-24-Italic.woff") format("woff");
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Times Pixelated 24";
+    src: url("fonts/Times-Pixelated-24-BoldItalic.woff2") format("woff2"),
+    url("fonts/Times-Pixelated-24-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Times Pixelated 32";
+    src: url("fonts/Times-Pixelated-32-Regular.woff2") format("woff2"),
+    url("fonts/Times-Pixelated-32-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Times Pixelated 32";
+    src: url("fonts/Times-Pixelated-32-Bold.woff2") format("woff2"),
+    url("fonts/Times-Pixelated-32-Bold.woff") format("woff");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Times Pixelated 32";
+    src: url("fonts/Times-Pixelated-32-Italic.woff2") format("woff2"),
+    url("fonts/Times-Pixelated-32-Italic.woff") format("woff");
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Times Pixelated 32";
+    src: url("fonts/Times-Pixelated-32-BoldItalic.woff2") format("woff2"),
+    url("fonts/Times-Pixelated-32-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
 :root {
     --background-color: #1d1f21;
     /*--input-color: #282a2e;*/
@@ -16,7 +203,10 @@
 body {
     background: #1d1f21;
     color: #c5c8c6;
-    
+    font-family: "Times Pixelated 16";
+}
+h1 {
+    font-family: "Times Pixelated 32";
 }
 a {
     color: var(--link-color);
@@ -51,3 +241,33 @@ ul {
 li::marker {
     content: '>';
   }
+
+label {
+    cursor: pointer;
+  }
+
+  label, #content {
+    height: 20px;
+    width: 800px;
+    margin-botton: 10px;
+    display: inline-block;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .menu {
+    width: 780px;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .menu-toggle:checked + .menu {
+    max-height: 100px;
+  }
+.blog-title {
+    margin: 0;
+}
+.blog-date {
+    margin: 0;
+}
