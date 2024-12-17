@@ -2,11 +2,20 @@
 layout: navbar.njk
 title: Blog Directory
 ---
-<p>welcome to my ramblings...</p><br>
-<p>here i will be posting writeups, retrospectives, life stuff, favorite ciders. all the goodies, really</p><br>
-<p>there's a tagging system but you can just go chronological like blogspot</p><br>
-<ul>
-  {%- for post in collections.blog -%}
-    <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+<p>welcome to my ramblings...</p>
+<p>here i will be posting writeups, retrospectives, life stuff, favorite ciders. all the goodies, really</p>
+<p>there's a tagging system but you can just go chronological like blogspot</p>
+<label for="uy-menu-toggle"><a>[Urusei Yatsura Blogs]</a></label>
+<input type="checkbox" id="uy-menu-toggle" class="menu-toggle"/>
+<ul class="menu">
+  {%- for post in collections.urusei -%}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
   {%- endfor -%}
-</ul>  
+</ul>
+<label for="blogs-menu-toggle"><a>[All Blogs]</a></label>
+<input type="checkbox" id="blogs-menu-toggle" class="menu-toggle"/>
+<ul class="menu">
+  {%- for post in collections.blog -%}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+  {%- endfor -%}
+</ul>
