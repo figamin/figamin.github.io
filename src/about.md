@@ -1,8 +1,8 @@
 ---
 layout: navbar.njk
-title: About WapBlog
+title: about figamin.net
 ---
-# About the Wapchan Blog
+# about figamin.net
 The wapchan blog is mostly a personal site run by [figamin](https://figamin.net), though this site will be focused more on content related to wapchan, including anime, visual novels, and tech.
 ## Goals
 To be a hub for stuff that I like.
