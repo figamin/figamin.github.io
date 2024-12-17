@@ -248,7 +248,6 @@ label {
 
   label, #content {
     height: 20px;
-    width: 800px;
     margin-botton: 10px;
     display: inline-block;
   }
@@ -256,18 +255,33 @@ label {
     display: none;
   }
   .menu {
-    width: 780px;
     overflow: hidden;
     max-height: 0;
     padding: 0;
     margin: 0;
   }
   .menu-toggle:checked + .menu {
-    max-height: 100px;
+    max-height: 200px;
   }
 .blog-title {
     margin: 0;
 }
 .blog-date {
     margin: 0;
+}
+.center-list-holder {
+  display: flex;
+  justify-content: center;
+}
+.center-list-inner {
+  text-align: left;
+}
+.socials-list {
+  margin-left: 1em;
+}
+.socials-list li::marker {
+  content: '└>';
+}
+.sublist li::marker {
+  content: '└>';
 }
