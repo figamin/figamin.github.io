@@ -1,6 +1,7 @@
 ---
 layout: "navbar.njk"
 ---
-<a href="/blogs">&lt;-- Back</a>
-{{ page.date | postDate }}
+<br><a href="/blogs">&lt;-- Back</a>
+<h1>{{ title }}</h1>
+<h3>Posted on {{ page.date | postDate }}</h3>
 {{ content | safe }}
