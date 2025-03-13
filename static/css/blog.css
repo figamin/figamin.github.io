@@ -1,0 +1,228 @@
+
+  @font-face {
+    font-family: "Sazanami Gothic";
+    src: url("fonts/sazanami-gothic.woff2") format("woff2"),
+    url("fonts/sazanami-gothic.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Sazanami Gothic 1";
+    src: url("fonts/sazanami-gothic-1.woff2") format("woff2"),
+    url("fonts/sazanami-gothic-1.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Sazanami Gothic 2";
+    src: url("fonts/sazanami-gothic-2.woff2") format("woff2"),
+    url("fonts/sazanami-gothic-2.woff") format("woff");
+  }
+:root {
+    --background-color: #1d1f21;
+    /*--input-color: #282a2e;*/
+    --reply-color: #242629;
+    --reply-border-color: #848484;
+    --input-border-color: #111;
+    --text-color: #c5c8c6;
+    --link-color: #9ab9f2;
+    --link-hover-color: #81a2be;
+    --subject-color: #ed7db6;
+    --name-color: #7fedb5;
+    --capcode-color: #ff8a8a;
+    --sauce-color: #ffadff;
+    --wapchan-yellow: #fffe00;
+}
+body {
+    background: url("hinami_miti2.jpg");
+    color: white;
+    text-shadow: .05em .05em 0 rgba(0, 0, 0, 1);
+    font-family: "Sazanami Gothic 1";
+    font-size: 150%;
+    z-index: 0;
+}
+.new-body {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  z-index: 2;
+}
+h1 {
+    font-family: "Times Pixelated 32";
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+	color: var(--link-hover-color);
+}
+p {
+  text-indent: .5em;
+}
+footer {
+    font-size: 80%;
+}
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+#nav {
+    border: 1px solid var(--reply-border-color);
+    display: inline-flex;
+    flex-direction: column;
+}
+#welcome {
+    flex-direction: column;
+    text-align: center;
+}
+#welcome pre {
+    display: inline-block;
+    text-align: left;
+}
+ul {
+    list-style-position: inside;
+}
+li::marker {
+    content: '>';
+  }
+
+label {
+    cursor: pointer;
+  }
+
+  label, #content {
+    height: 20px;
+    margin-botton: 10px;
+    display: inline-block;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .menu {
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .menu-toggle:checked + .menu {
+    max-height: 200px;
+  }
+.blog-title {
+    margin: 0;
+}
+.blog-date {
+    margin: 0;
+}
+.center-list-holder {
+  display: flex;
+  justify-content: left;
+}
+.center-list-inner {
+  padding-left: 0;
+  text-align: left;
+}
+.socials-list {
+  margin-left: 1em;
+}
+.socials-list li::marker {
+  content: '└>';
+}
+.sublist li::marker {
+  content: '└>';
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+#siteLogo {
+  width: 213px;
+  height: auto;
+  image-rendering: pixelated;
+}
+.index-side-container {
+  position: absolute
+}
+.index-side-nav-boxes {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background: rgb(255,113,184);
+background: linear-gradient(0deg, rgba(255,113,184,1) 0%, rgba(255,176,187,1) 10%, rgba(255,226,230,1) 30%, rgba(255,255,255,1) 100%);
+width: 7em;
+height: 2em;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.index-side-bottom-box {
+  border-bottom: 1px solid black;
+}
+#counter-box {
+  height: 5em;
+  flex-direction: column;
+}
+.index-side-container {
+  box-shadow: .25em .25em black;
+}
+.index-center-boxes {
+  border: 1px solid black;
+  height: 13.35em;
+  width: 20em;
+  margin-left: 8em;
+  background: white;
+  box-shadow: .25em .25em black;
+  text-align: left;
+  display: flex;
+}
+.index-center-boxes p {
+  display: flex;
+  font-size: 90%;
+  align-items: center;
+}
+.index-center-text {
+  padding: 1em;
+}
+.index-top-bar {
+  display: inline-flex;
+}
+.index-quote-box {
+  margin-left: 1em;
+  font-style: italic;
+  width: 9em;
+  display: flex;
+}
+.index-quote-box p {
+  margin: 0;
+  font-size: 85%;
+  display: flex;
+  align-items: center;
+}
+.index-news-box-title {
+  position: absolute;
+  bottom: 10em;
+  border: 1px solid black;
+  width: 3em;
+}
+.index-news-box-content {
+  position: absolute;
+  bottom: 8em;
+  border: 1px solid black;
+}
+.blog-body {
+  z-index: 3;
+  color: white;
+  position: relative;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: .5em
+}
+.bg-sprite {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+}
+#story-container {
+  white-space: pre-line;
+}

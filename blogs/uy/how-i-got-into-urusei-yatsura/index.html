@@ -4,25 +4,109 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/bundle.css">
+    <link rel="stylesheet" href="/static/css/blog.css">
     <title>How I got into Urusei Yatsura</title>
   </head>
   <body>
-    <nav>
-    [<a href="/">home</a> /
-    <a href="/about">about</a> /
-    <a href="/blogs">blogs</a> /
-    <a href="/gallery">gallery</a> /
-    <a href="https://www.youtube.com/@figamin">youtube</a>]
-</nav>
-<br><a href="/blogs">&lt;-- Back</a>
-<h1>How I got into Urusei Yatsura</h1>
-<h3>Posted on Jan 10, 2025</h3>
-<p>It's funny, really - I wasn't an &quot;anime person&quot; when I was growing up. This is something that probably seems strange to think when you visit the sites I run, but it's true. I had a passing knowledge of the medium, but only the one that comes from the fact that anime people hang out in the same online spaces as vidya people and other nerd stuff. So I didn't really know anime at all, even as I got into college. Not much happened there when it came to anime either... at least until the pandemic stuck that March. Now I had a stupidly high amount of free time to be stuck in my house. I'd wanted to get into anime for a while - there were multiple reasons of course. One of my friends from high school watched a decent amount, stuff like Kill la Kill and Fullmetal Alchemist. But I didn't know where to hop on the train myself. Everyone I talked to said to start with Evangelion, Dragon Ball or One Piece. I wasn't interested though - I figured if I wanted to start somewhere, it would be with something a little less mainstream. Ironically I haven't seen any of these beyond clips to this day - getting around to it! Anyways, I was browsing youtube on my phone one time while sitting through the world's most boring lecture on Linear Algebra, a total snoozefest of a class, for anyone who's done matrix equations you know how long it takes to write them out! So I was on youtube and I happened to watch a video of the first opening</p>
+    
+<!--<div class="blog-body">"Hey, hey! Aren't you giving us two completely different answers here?!"
 
+Mion didn't seem amused at how quickly I gave in to Rena after teasing her so much. I, on the other hand, found Mion's annoyance highly amusing. So I hurried Rena forward, quickening our pace to leave Mion behind.
+</div>-->
+<div class="new-body"><div class="blog-body"><div id="story-container"></div></div></div>
+<div id="instruction"></div>
+<img class="bg-sprite" src="/static/images/mion.png">
+<script>
+        // The story paragraph split into sentences
+        const sentences = [
+            '"Hey, hey! Aren\'t you giving us two completely different answers here?!"\n\n',
+            "Mion didn't seem amused at how quickly I gave in to Rena after teasing her so much.",
+            "I, on the other hand, found Mion's annoyance highly amusing.",
+            "So I hurried Rena forward, quickening our pace to leave Mion behind."
+        ];
 
-<footer>
-    <p>all opinions are my own</p>
-</footer>
+        // Image placeholders for each sentence and the final one
+        const images = [
+            "/static/images/new-line.gif",
+            "/static/images/new-line.gif",
+            "/static/images/new-line.gif",
+            "/static/images/new-line.gif"
+        ];
+
+        // Final image is different
+        const finalImage = "/static/images/new-page.gif";
+
+        let currentSentenceIndex = 0;
+        let currentCharIndex = 0;
+        let currentText = "";
+        let typingInterval;
+        let waitingForInput = false;
+
+        const storyContainer = document.getElementById("story-container");
+        const imageContainer = document.getElementById("image-container");
+        const instruction = document.getElementById("instruction");
+
+        // Function to start typing the current sentence
+        function startTyping() {
+            instruction.style.display = "none";
+            let needsIndent = currentSentenceIndex === 0 || 
+                     (currentSentenceIndex > 0 && sentences[currentSentenceIndex - 1].endsWith('\n\n'));
+    
+    // Add indent if needed before starting to type
+    if (needsIndent && currentCharIndex === 0) {
+        currentText += "&nbsp;"; // Four non-breaking spaces for indent
+    }
+            typingInterval = setInterval(() => {
+                if (currentCharIndex < sentences[currentSentenceIndex].length) {
+                    currentText += sentences[currentSentenceIndex][currentCharIndex];
+                    storyContainer.innerHTML = currentText;
+                    currentCharIndex++;
+                } else {
+                    clearInterval(typingInterval);
+                    storyContainer.innerHTML = currentText;
+                    // If it's the last sentence, show the final image
+                    if (currentSentenceIndex === sentences.length - 1) {
+                            storyContainer.innerHTML += `<img src="${finalImage}" alt="Final scene image" style="position: absolute;">`;
+                            instruction.style.display = "none";
+                    } else {
+                        storyContainer.innerHTML += `<img src="${images[currentSentenceIndex]}" alt="Scene image" style="position: absolute;">`;
+                        instruction.style.display = "block";
+                        waitingForInput = true;
+                    }
+                }
+            }, 50);
+        }
+
+        // Handle key press to continue to the next sentence
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Enter" && waitingForInput) {
+                waitingForInput = false;
+                currentSentenceIndex++;
+                
+                if (currentSentenceIndex < sentences.length) {
+                    currentText += " ";
+                    currentCharIndex = 0;
+                    startTyping();
+                }
+            }
+        });
+        document.addEventListener('keydown', function(event) {
+      // Check if space key was pressed
+      if (event.code === 'Space') {
+        event.preventDefault(); // Prevent page scrolling with space
+        const container = document.querySelector('.new-body');
+        const blogBody = document.querySelector('.blog-body');
+        if (blogBody.style.display === 'none') {
+          blogBody.style.display = 'block';
+          container.style.display = 'block';
+        } else {
+          blogBody.style.display = 'none';
+          container.style.display = 'none';
+        }
+      }
+    });
+        // Start the first sentence
+        startTyping();
+    </script>
   </body>
 </html>
