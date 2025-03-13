@@ -36,6 +36,8 @@ body {
     font-family: "Sazanami Gothic 1";
     font-size: 150%;
     z-index: 0;
+    margin: 0;
+    background-repeat: no-repeat;
 }
 .new-body {
   content: '';
@@ -225,4 +227,9 @@ justify-content: center;
 }
 #story-container {
   white-space: pre-line;
+}
+.aspect-ratio-holder {
+  width: 640px;
+  height: 480px;
+  position: relative;
 }
