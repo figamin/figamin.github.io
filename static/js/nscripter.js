@@ -1,66 +1,38 @@
-
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/blog-vn.css">
-    <title>Blog VN Test</title>
-  </head>
-  <body>
-    
-<!--<div class="blog-body">"Hey, hey! Aren't you giving us two completely different answers here?!"
-
-Mion didn't seem amused at how quickly I gave in to Rena after teasing her so much. I, on the other hand, found Mion's annoyance highly amusing. So I hurried Rena forward, quickening our pace to leave Mion behind.
-</div>-->
-<div class="aspect-ratio-holder"><div class="new-body"><div class="blog-body"><div id="story-container"></div></div></div>
-<div id="instruction"></div>
-<img class="bg-sprite" src="/static/images/mion.png">
-</div>
-<div id="navbar">
-  <a class="nav-boxes" href="/blogs"><- go back</a>
-</div>
-<p style="color:black; text-shadow: none;">This is a test of a NScripter-like view using CSS and a bit of JS. It is what I will use for my blog entries.<br>
-    Press ENTER to advance the story.<br>
-    Press SPACE to hide/show the text.<br>
-    This was made to be viewed at 640x480 but should be easily scalable, provided the resolution is still 4/3.
-</p>
-<script>
-        // The story paragraph split into sentences
-        const sentences = [
-            '"Hey, hey! Aren\'t you giving us two completely different answers here?!"\n\n',
-            "Mion didn't seem amused at how quickly I gave in to Rena after teasing her so much.",
-            "I, on the other hand, found Mion's annoyance highly amusing.",
-            "So I hurried Rena forward, quickening our pace to leave Mion behind."
-        ];
-
-        // Image placeholders for each sentence and the final one
-        const images = [
-            "/static/images/new-line.gif",
-            "/static/images/new-line.gif",
-            "/static/images/new-line.gif",
-            "/static/images/new-line.gif"
-        ];
-
-        // Final image is different
-        const finalImage = "/static/images/new-page.gif";
+ // The story paragraph split into sentences
 
         let currentSentenceIndex = 0;
         let currentCharIndex = 0;
         let currentText = "";
         let typingInterval;
         let waitingForInput = false;
-
+        let firstTime = true;
         const storyContainer = document.getElementById("story-container");
         const imageContainer = document.getElementById("image-container");
         const instruction = document.getElementById("instruction");
 
         // Function to start typing the current sentence
         function startTyping() {
+            if(firstTime) {
+                sentences = document.getElementById('script').textContent.split(/[|;]/);
+                console.log(sentences);
+                newPage = []
+                for (let char of document.getElementById('script').textContent) {
+                    if (char === '|') {
+                       newPage.push(false);
+                    } else if (char === ';') {
+                        newPage.push(true);
+                    }
+                }
+                console.log(newPage)
+                firstTime = false;
+            }
             instruction.style.display = "none";
             let needsIndent = currentSentenceIndex === 0 || 
                      (currentSentenceIndex > 0 && sentences[currentSentenceIndex - 1].endsWith('\n\n'));
-    
+     if (newPage[currentSentenceIndex - 1] === true) {
+        storyContainer.innerHTML = "";
+        currentText = "";
+    }
     // Add indent if needed before starting to type
     if (needsIndent && currentCharIndex === 0) {
         currentText += "&nbsp;"; // Four non-breaking spaces for indent
@@ -78,7 +50,14 @@ Mion didn't seem amused at how quickly I gave in to Rena after teasing her so mu
                             storyContainer.innerHTML += `<img src="${finalImage}" alt="Final scene image" style="position: absolute;">`;
                             instruction.style.display = "none";
                     } else {
-                        storyContainer.innerHTML += `<img src="${images[currentSentenceIndex]}" alt="Scene image" style="position: absolute;">`;
+                        let currentDelimiter = "";
+                        console.log(newPage[currentSentenceIndex])
+                        if(newPage[currentSentenceIndex] == false) {
+                            currentDelimiter = "new-line"
+                        } else {
+                            currentDelimiter = "new-page"
+                        }
+                        storyContainer.innerHTML += `<img src="/static/images/${currentDelimiter}.gif" alt="Scene image" style="position: absolute;">`;
                         instruction.style.display = "block";
                         waitingForInput = true;
                     }
@@ -116,6 +95,3 @@ Mion didn't seem amused at how quickly I gave in to Rena after teasing her so mu
     });
         // Start the first sentence
         startTyping();
-    </script>
-  </body>
-</html>
