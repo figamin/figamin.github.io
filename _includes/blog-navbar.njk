@@ -1,7 +1,15 @@
 ---
-layout: "navbar.njk"
+layout: "blog-classic-base.njk"
 ---
-<br><a href="/blogs">&lt;-- Back</a>
-<h1>{{ title }}</h1>
-<h3>Posted on {{ page.date | postDate }}</h3>
+<div id="navbar">
+  <a class="box-shadow nav-boxes" href="/blogs"><-</a>
+  <span class="box-shadow left-space nav-boxes-non-button"><b>{{ title }}</b></span>
+  <span class="box-shadow left-space nav-boxes-non-button">Posted on {{ page.date | postDate }}</span>
+</div>
 {{ content | safe }}
+<footer>
+<div id="navbar">
+  <a class="box-shadow nav-boxes" href="/blogs"><-</a>
+  <span class="box-shadow left-space nav-boxes-non-button"></span>
+</div>
+</footer>

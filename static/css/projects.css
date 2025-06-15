@@ -25,6 +25,7 @@ justify-content: center;
 background: white;
 padding-left: .5em;
 padding-right: .5em;
+height: 2em;
 text-align: center;
 display: flex;
 align-items: center;
@@ -57,9 +58,6 @@ a:hover {
 .blog-row {
   margin-top: 5px;
   display: flex;
-}
-.box-top-margin {
-  margin-top: 5px;
 }
 .left-space {
   margin-left: 5px;

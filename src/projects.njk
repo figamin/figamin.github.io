@@ -1,0 +1,18 @@
+---
+layout: blog-classic-base.njk
+title: Projects
+---
+<div id="navbar">
+  <a class="box-shadow nav-boxes" href="/"><-</a>
+  <span class="box-shadow left-space nav-boxes-non-button"><b>Projects</b></span>
+</div>
+<div class="message-box">
+  <p class="message-text">I work on a bunch of random stuff. Here's where you'll find info about them</p>
+</div>
+<div class="blog-entries">
+  {%- for post in collections.project | reverse -%}
+  <div class="blog-row">
+<a class="box-shadow nav-boxes" href="{{ post.url }}">{{ post.data.title }}</a>
+  </div>
+  {%- endfor -%} 
+</div>

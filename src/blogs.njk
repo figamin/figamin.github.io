@@ -1,29 +1,18 @@
 ---
 layout: blog-classic-base.njk
-title: Blog Directory
+title: Blogs
 ---
-<p class="textLogo" src="/static/images/sitelogo.svg" alt="figamin.net" eleventy:ignore>Blogs (placeholder)</p>
-<a class="box-text" href="/blogs"><div class="index-side-nav-boxes index-side-bottom-box index-side-container"><- go back</div></a>
-<p>here i will be posting writeups, retrospectives, life stuff, favorite ciders. all the goodies, really</p>
-<p>there's a tagging system but you can just go chronological like blogspot</p>
-<label for="uy-menu-toggle"><a>[Urusei Yatsura Blogs]</a></label>
-<input type="checkbox" id="uy-menu-toggle" class="menu-toggle"/>
-<ul class="sublist menu">
-  {%- for post in collections.urusei -%}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
-  {%- endfor -%}
-</ul>
-<label for="wapchan-menu-toggle"><a>[Wapchan Blogs]</a></label>
-<input type="checkbox" id="wapchan-menu-toggle" class="menu-toggle"/>
-<ul class="sublist menu">
-  {%- for post in collections.wapchan -%}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
-  {%- endfor -%}
-</ul>
-<label for="blogs-menu-toggle"><a>[All Blogs]</a></label>
-<input type="checkbox" id="blogs-menu-toggle" class="menu-toggle"/>
-<ul class="sublist menu">
-  {%- for post in collections.blog -%}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
-  {%- endfor -%}
-</ul>
+<div id="navbar">
+  <a class="box-shadow nav-boxes" href="/"><-</a>
+  <span class="box-shadow left-space nav-boxes-non-button"><b>Blogs</b></span>
+</div>
+<div class="message-box">
+  <p class="message-text">Welcome to the blogs page. Nothing too special here, just writeups on stuff I'm interested in.</p>
+</div>
+<div class="blog-entries">
+  {%- for post in collections.blog | reverse -%}
+  <div class="blog-row">
+    <span class="box-shadow nav-boxes-non-button">{{ post.date | postDate }}:</span><a class="box-shadow left-space nav-boxes" href="{{ post.url }}">{{ post.data.title }}</a>
+  </div>
+  {%- endfor -%} 
+</div>
