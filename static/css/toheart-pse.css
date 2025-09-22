@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "emkasanscondensed";
+    src: url("fonts/emkasanscondensed.woff2") format("woff2"),
+    url("fonts/emkasanscondensed.woff") format("woff");
+}
+@font-face {
+    font-family: "emkasanscondensed";
+    src: url("fonts/emkasanscondensed-bold.woff2") format("woff2"),
+    url("fonts/emkasanscondensed-bold.woff") format("woff");
+    font-weight: bold;
+}
+body {
+    font-family: "emkasanscondensed";
+}
+.centered-container {
+  text-align: center;
+}
