@@ -3,5 +3,67 @@ title: ToHeart PSE English Patch
 date: "git Last Modified"
 ---
 <div class="centered-container">
-    <h4 class="toheart">ToHeartPSE English Patch</h4>
+    <h1 class="toheart">ToHeart PSE English Patch</h1>
+    <h3 class="toheart">This is an in-development patch to translate <a href="https://vndb.org/v30616">ToHeart PSE</a> into English, using the <a href="https://store.steampowered.com/app/3380520/ToHeart/">2025 Remake</a> script as a base.</h3>
+    <h2 class="toheart">Planned Features:</h2>
+    <ul class="toheart">
+        <li>Full script & UI in English (including scenes not in the remake such as the preludes to omake games)</li>
+        <li>Option to replace sprites/CGs with the PS1 or 1997 versions</li>
+        <li>Option to replace the soundtrack with the PS1 or GBC versions</li>
+
+    </ul>
+    <h2 class="toheart">FAQ:</h2>
+    <details class="toheart">
+        <summary>Why not just play the remake?</summary>
+    <p>While the remake certainly had a lot of effort into it, in many ways it is a very different experience despite using nearly the same script:</p>
+<ul>
+    <li>The entire game is rendered in real time 3D</li>
+    <li>3D walkaround segments</li>
+    <li>The soundtrack was redone</li>
+    <li>No omake games (HeartToHeart, ○ △ □ ×", and Moon Shooter)</li>
+    <li>Entire UI looks different</li>
+</ul>
+<p>There is also the fact that the remake is a relatively demanding game and will only run well if you have a strong graphics card (recommended spec is a RTX2060), which is very unusual for a visual novel. And of course, the original game can run on older versions of Windows.</p>
+</details>
+<details class="toheart">
+    <summary>I thought it was "To Heart"?</summary>
+    <p>This game has had a confusing history when it comes to the space in the title. To clarify:</p>
+    <img src="./img/toheart97.webp" alt="">
+    <p><a href="https://vndb.org/v18" target="_blank">To Heart</a> (with a space) refers to the original 1997 18+ release.
+    <img src="./img/toheart03.webp" alt="">
+    <p><a href="https://vndb.org/v30616" target="_blank">ToHeart</a> (without a space) refers to the 1999 all ages release on the PS1, which was substantially different from the original. It was later backported to the PC as PSE which was in turn ported to the PS2 and PSP. The 2025 remake is based off this, as is this project.</p>
+</details>
+<details class="toheart">
+    <summary>Is this related to the <a href="https://vndb.org/r82941">1997 version fan translation</a>?</summary>
+    <p>This is a seperate project, though there is some collarboration (the archive unpacking tools are based off ones developed for the 97 game).</p>
+</details>
+<details class="toheart">
+    <summary>How long will this take to complete?</summary>
+    <p>At least a few months, possibly longer since I'm working on other stuff in addition to my job. I'll ballpark it at November for one route being done and Spring 2026 for the full game, but this is all just rough estimation.</p>
+</details>
+<details class="toheart">
+    <summary>Can I use the tools to develop a different language translation?</summary>
+    <p>Sure, though I can't verify they will work 100% until I finish. The tools work using python mapper files containing the original text and the replacement text. Here is an example from the opening:</p>
+    <pre><code> ("ピピピピ、",
+    "*beep-beep-beep-beep*      "),
+    ("ピピピピ、",
+    "*beep-beep-beep-beep*          "),
+    ("ピピピピ…。",
+    " *beep-beep-beep-beep*"),
+
+    ("カチッ。",
+    "*click*"),
+
+    ("布団の中から手を伸ばし、目覚まし時計のスイッチをオフにする。",
+    "I reach a hand out from under the   blanket and turn off my alarm clock."),</code></pre>
+    <p>Note that spacing is manually handled right now, since I want to avoid messing with the control codes. Currently, I haven't tested all the lines yet and some contain corrupted kanji characters that I will have to manually strip.</p>
+</details>
+<details class="toheart">
+    <summary>Is this a direct port of the remake script?</summary>
+    <p>No, since there are some parts that will be changed, either due to unnecessary localizations or awkward phrasing. Lines from the 1997 version fan TL that line up with PSE lines will be used when possible.</p>
+</details>
+<details class="toheart">
+    <summary>Is this piracy?</summary>
+    <p>To encourage supporting ALPHAPLUS, this will require a copy of the 2025 remake in order to build the translated archive files necessary for the game.</p>
+</details>
 </div>
