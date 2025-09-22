@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "MSMINCHO";
+    src: url("fonts/MSMINCHO.woff2") format("woff2"),
+    url("fonts/MSMINCHO.woff") format("woff");
+}
+@font-face {
+    font-family: "emkasanscondensed";
+    src: url("fonts/emkasanscondensed.woff2") format("woff2"),
+    url("fonts/emkasanscondensed.woff") format("woff");
+}
+@font-face {
+    font-family: "emkasanscondensed";
+    src: url("fonts/emkasanscondensed-bold.woff2") format("woff2"),
+    url("fonts/emkasanscondensed-bold.woff") format("woff");
+    font-weight: bold;
+}
+body {
+    font-family: "MSMINCHO";
+}
+.toheart {
+    font-family: "emkasanscondensed";
+    font-weight: bold;
+}
+.centered-container {
+  text-align: center;
+}
