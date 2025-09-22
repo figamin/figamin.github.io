@@ -32,9 +32,8 @@ jobs:
           #this is where you need to point GitHub pages
           publish_branch: gh-pages
       - name: deploy2nekoweb
-        uses: deploy2nekoweb/deploy2nekoweb@v4
+        uses: indiefellas/deploy2nekoweb@main
         with:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
-          nekoweb-folder: 'public'
           directory: 'public'
