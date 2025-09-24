@@ -7,30 +7,87 @@ Over the past few months, I have been slowly reading [ONE ~Kagayaku Kisetsu e~](
 ONE at the surface is your standard slice of life VN - you play as Orihara Kouhei, going about your high school days spanning from November to April, talking to girls. His parents died a while ago, so he lives with his aunt. The complexity comes in the concept of the "eternal world", which is this alternative place that isn't really explained well that Kouhei travels to sometimes when he sleeps. The crux of the story revolves around Kouhei talking to a mysterious girl in these scenes, which later on turns out to be his sister, and after she got sick and died when he was young, he started visiting the eternal world and talking with her. If this sounds familiar, it's because the themes aren't too different from Kanon - in effect that game can be seen as a different interpretation of the same base ideas. However, while in Kanon the subplot is restricted to only being seen when you advance through Ayu's route, in ONE you will see it every single time you get near the end of a route, and after the first time there's really no point in reading it since it doesn't change, which means you'll end up holding down CTRL for a bit. In any case, this ties into the main game as near the end of each character's route, Kouhei realizes that people are forgetting about him, which eventually leads to only the girl you've been talking to remembering him, and he "vanishes" for a while and comes back. Again, it's not exactly clear how this works, but that was probably intentional. Apparently it was explained further in [ONE 2 ~Eien no Yakusoku~](https://vndb.org/v670), but this was developed by a completely different team at NEXTON years later and it is hard to say if this reflects the ideas of the original team.
 
 As for the routes themselves, they vary in quality. Like MOON before, ONE had the writing split between Hisaya Naoki and Maeda Jun. However, while Hisaya's work is pretty strong (especially in regards to Akane and Misaki), Maeda's work is sometimes decent and sometimes awful. The main problem is that the common route (which is repetitive in itself) characterizes Kouhei as a guy that's kinda rough with people sometimes but still ultimately nice, and while Hisaya's routes generally keep that characterization, Maeda's always involve him doing some downright criminal acts for no real reason and then just feeling bad and having others forgive him. This is especially bad when it comes to Mayu and Mizuka, both of which were painful to read at times. It's a shame because parts of these routes are good, but I don't see how someone could read this and feel like Kouhei is supposed to be seen in a positive light afterwards (which he clearly is). Some more detailed writeups on each route:
+
 <div class="row">
     <div class="img-block">
-    <img src="./img/mayu.webp" alt="" style="width:100px; height:auto;">
-    <div class="caption">Mayou</div>
+        <img src="./img/mayu.webp" alt="" style="width:100px; height:auto;">
+        <div class="caption">Shiina Mayu</div>
     </div>
     <div class="side-text">
-    Mayu: This is the one I ended up doing first by accident and it is by far the worst. It would have been fine if he just tried to help her out since she doesn't have a great living situation and all but he ends up grooming her and it's really bad. Mio's route does similar themes better anyways so I'm not sure why this was included.
+    This is the one I ended up doing first by accident and it is by far the worst. It would have been fine if he just tried to help her out since she doesn't have a great living situation and all but he ends up grooming her and it's really bad. Mio's route does similar themes better anyways so I'm not sure why this was included.
     </div>
 </div>
 
+<div class="row">
+    <div class="img-block">
+        <img src="./img/rumi.webp" alt="" style="width:100px; height:auto;">
+        <div class="caption">Nanase Rumi</div>
+    </div>
+    <div class="side-text">
+    This one was funny and is by far the best Maeda route, but it could have explored the themes of bullying in greater depth. It reminded me of Makoto's route in Kanon in some aspects.
+    </div>
+</div>
 
-![alt](./img/rumi.webp)Rumi: This one was funny and is by far the best Maeda route, but it could have explored the themes of bullying in greater depth. It reminded me of Makoto's route in Kanon in some aspects.
+<div class="row">
+    <div class="img-block">
+        <img src="./img/mio.webp" alt="" style="width:100px; height:auto;">
+        <div class="caption">Kouzuki Mio</div>
+    </div>
+    <div class="side-text">
+    This one was just really nice and calm. Mio is mute which gives this a unique feeling.
+    </div>
+</div>
 
-![alt](./img/mio.webp)Mio: This one was just really nice and calm. Mio is mute which gives this a unique feeling.
+<div class="row">
+    <div class="img-block">
+        <img src="./img/akane.webp" alt="" style="width:100px; height:auto;">
+        <div class="caption">Satomura Akane</div>
+    </div>
+    <div class="side-text">
+    The most in depth route and the only one that really explores the central theme of the eternal world. Definitely the high point of the game.
+    </div>
+</div>
 
-![alt](./img/akane.webp)Akane: The most in depth route and the only one that really explores the central theme of the eternal world. Definitely the high point of the game.
+<div class="row">
+    <div class="img-block">
+        <img src="./img/misaki.webp" alt="" style="width:100px; height:auto;">
+        <div class="caption">Kawana Misaki</div>
+    </div>
+    <div class="side-text">
+    Another strong route that explored a disability, and the ending was probably the saddest.
+    </div>
+</div>
 
-![alt](./img/misaki.webp)Misaki: Another strong route that explored a disability, and the ending was probably the saddest.
+<div class="row">
+    <div class="img-block">
+        <img src="./img/natsuki.webp" alt="" style="width:100px; height:auto;">
+        <div class="caption">Shimizu Natsuki</div>
+    </div>
+    <div class="side-text">
+    This is the PS1 exclusive route that was ported to PC as part of the Eternal Patch. It just felt like a rehash of aspects of the other routes, but wasn't bad or anything.
+    </div>
+</div>
 
-![alt](./img/natsuki.webp)Natsuki: This is the PS1 exclusive route that was ported to PC as part of the Eternal Patch. It just felt like a rehash of aspects of the other routes, but wasn't bad or anything.
+<div class="row">
+    <div class="img-block">
+        <img src="./img/shun.webp" alt="" style="width:100px; height:auto;">
+        <div class="caption">Shun Hikami</div>
+    </div>
+    <div class="side-text">
+    This route had potential to explore more of the eternal world but was extremely short, so there's not much to say.
+    </div>
+</div>
 
-![alt](./img/shun.webp)Shun: This route had potential to explore more of the eternal world but was extremely short, so there's not much to say.
+<div class="row">
+    <div class="img-block">
+        <img src="./img/shun.webp" alt="" style="width:100px; height:auto;">
+        <div class="caption">Mizuka Nagamori</div>
+    </div>
+    <div class="side-text">
+    The final route I played and while not as bad as Mayu's, it's still a mess and makes Kouhei into a sadist for no real reason.
+    </div>
+</div>
 
-![alt](./img/mizuka.webp)Mizuka: The final route I played and while not as bad as Mayu's, it's still a mess and makes Kouhei into a sadist for no real reason.
 
 In terms of the art direction, ONE was handled by Hinoue Itaru, and while it's pretty decent, the background art in particular suffers from a lack of snow - it doesn't really feel like winter, which is strange as that's the season the game largely takes place in. It is clear that the style used in Kanon was a reflection of this unrealized potential. Also, I played the Eternal Patch which was based on the Full Voice edition from 2003. The graphics looked slightly different in the original 1998 release, and dramatically different in the 2023 remake. At some point I will try out the 2023 remake and give my thoughts on it.
 
