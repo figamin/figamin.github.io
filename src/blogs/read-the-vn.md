@@ -1,6 +1,6 @@
 ---
 title: Read The VN
-date: "git Created"
+date: 2025-07-05
 ---
 If you've been around the 07th scene for long enough, you might have run across this edit:
 ![alt](./img/read-the-vn.jpg)

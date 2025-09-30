@@ -1,6 +1,6 @@
 ---
 title: ONE - Raw Ambition (spoilers)
-date: "Created"
+date: 2025-09-25
 ---
 Over the past few months, I have been slowly reading [ONE ~Kagayaku Kisetsu e~](https://vndb.org/v51), using the Eternal patch developed by . I had previously read Kanon (blog soon), but I wanted to go back and see what had previously been done by the early Key team back when they worked at Tactics. What I found was decidedly mixed - on the one hand, the story is quite ambitious and arguably created the nakige format that would define Key's future works, but on the other hand, it suffers from inconsistent writing and an underwhelming atmosphere.
 
