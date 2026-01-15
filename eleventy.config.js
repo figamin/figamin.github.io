@@ -8,6 +8,9 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addFilter("postDate", (dateObj) => {
 		return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   	});
+	eleventyConfig.setServerOptions({
+    	port: 8081,
+  	});
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		// which file extensions to process
 		extensions: 'html',

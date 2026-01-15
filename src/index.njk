@@ -2,39 +2,49 @@
 layout: base.njk
 title: figamin.net
 ---
-<div class="index-top-bar">
-    <img id="siteLogo" src="/static/images/sitelogo.svg" alt="figamin.net" eleventy:ignore>
-    <!--<div class="index-quote-box"><p>Miracles don't happen.</p></div>-->
-</div>
-    <div id="main-body">
-        <nav class="nav-parent">
-            <a class="nav-boxes" href="/about">about</a>
-            <a class="nav-boxes" href="/blogs">blogs</a>
-            <a class="nav-boxes" href="/imageboards">imageboards</a>
-            <a class="nav-boxes" href="/fargo1999">fargo1999</a>
-            <a class="nav-boxes" href="/videos">videos</a>
-            <a class="nav-boxes" href="/net-friends">net friends</a>
-            <div id="counter-box" class="nav-boxes index-side-bottom-box"><span style="vertical-align: middle;">you are visitor #</span><!-- FC2カウンター ここから -->
-<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=40460552&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=40460552&main=1"  alt=":figamin-net-counter" eleventy:ignore//></noscript>
-<!-- FC2カウンター ここまで --></div>
+<div id="content">
+    <div id="header">
+        <img id="header-logo" src="/static/images/sitelogo.svg" alt="figamin.net" eleventy:ignore>
+        <p id="header-quote">"They're called miracles because they don't happen."</p>
+    </div>
+    <div id="general">
+        <nav id="sidebar">
+            <a class="sidebar-box" href="/about">About</a>
+            <a class="sidebar-box" href="/blogs">Blogs</a>
+            <a class="sidebar-box" href="/imageboards">Imageboards</a>
+            <a class="sidebar-box" href="/fargo1999">Fargo1999</a>
+            <a class="sidebar-box" href="/videos">Videos</a>
+            <a class="sidebar-box" href="/net-friends">Net Friends</a>
         </nav>
-        <div class="message-box">
-            <p class="message-text">Hello! I'm figamin. Been relatively active in both the retro anime & visual novel scenes recently. This is a place to find my writeups about stuff that I think is neat.</p>
+        <div id="main-holder">
+            <main>
+                <p id="main-text">Hey! I'm figamin. This is my personal site where I talk about stuff sometimes. You might find it interesting.</p>
+            </main>
+            <div class="bars">
+            </div>
+            <div id="main-buttons">
+
+            </div>
         </div>
-        <div class="news-tag">News - 9/25/25</div>
-        <div class="news-box">
-            <p class="news-text">Added ONE and Kanon blogs, as well as Fargo1999
-            </p>
-        </div>
-        <!--<div class="index-news-box-title">
-            <p>News:</p>
-        </div>
-        <div class="index-news-box-content">
-            <p>example news</p>
-        </div>-->
         
+        <div id="update-holder">
+            <div id="update-logo">
+                <p>Updates</p>
+            </div>
+            <div class="bars">
+            </div>
+            <div id="update-box">
+                <ul id="update-box-text">
+                    <li>1/14/26 - Site overhaul started</li>
+                </ul>
+            </div>
+        </div>
         
     </div>
+    <div id="footer">
+        <p id="footer-text">Made with 11ty in the big 26.</p>
+    </div>
+</div>
 
 
 
