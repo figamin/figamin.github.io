@@ -12,6 +12,9 @@ body {
   box-sizing: border-box;
   font-family: "Web437_NEC_APC3_8x16";
 }
+#sidebar-mobile {
+  display: none;
+}
 #main-holder {
   width: 85%;
   margin-left: 1%;
@@ -117,7 +120,59 @@ ul {
   margin: 1rem;
   font-size: 1.5em
 }
-@media screen and (max-width: 800px) {
+@media screen and (orientation: portrait) and (max-width: 768px) { 
+    #content {
+      max-width: 100%;
+      /* Remove min-height: 100% if it causes issues; auto is safer for long content */
+      height: auto; 
+    }
+
+    #header {
+      flex-direction: column;
+    }
+
+    #header-logo {
+      max-width: 100%;
+    }
+
+    #general {
+      flex-direction: column;
+    }
+
+    #sidebar {
+      display: none;
+    }
+
+    #update-holder {
+      display: none;
+    }
+
+    #sidebar-mobile {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #main-holder {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      height: auto;
+      min-height: 200px; 
+    }
+
+    #main-buttons {
+      height: auto;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
   body {
     font-size: 1em;
   }
