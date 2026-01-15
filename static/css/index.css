@@ -1,10 +1,16 @@
+@font-face {
+    font-family: "Web437_NEC_APC3_8x16";
+    src: url("fonts/Web437_NEC_APC3_8x16.woff") format("woff");
+  }
 a {
   text-decoration: none;
+  color: black;
 }
 body {
   background: url("wallpattern-simple.png");
   font-size: 16pt;
   box-sizing: border-box;
+  font-family: "Web437_NEC_APC3_8x16";
 }
 #main-holder {
   width: 85%;
@@ -15,14 +21,28 @@ body {
 main {
   border: 1px solid black;
   background-color: white;
-  height: 80%;
+  height: 85%;
   box-sizing: border-box;
+  box-shadow: .25em .25em black;
 }
 #main-buttons {
-  border: 1px solid black;
-  background-color: white;
   height: 15%;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  height: 48px;
+  width: auto;
+  margin: .5rem
+}
+.button img {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  box-shadow: .25em .25em black;
 }
 ul {
   list-style-type: none;
@@ -31,6 +51,8 @@ ul {
   width: 15%;
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 #update-logo {
   background: linear-gradient(0deg, rgba(255,113,184,1) 0%, rgba(255,176,187,1) 10%, rgba(255,226,230,1) 30%, rgba(255,255,255,1) 100%);
@@ -39,23 +61,21 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: .25em .25em black;
 }
 .bars {
   height: 5%;
-  border-left: 5px solid black;
-  border-right: 5px solid black;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  
 }
 #update-box {
   background-color: white;
   border: 1px solid black;
   height: 85%;
+  box-shadow: .25em .25em black;
 }
 #update-box-text {
   font-size: .9em;
   margin: 1rem;
+  padding: 0;
 }
 #header {
   display: flex;
@@ -83,16 +103,63 @@ ul {
 #sidebar {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  background: black;
 }
 .sidebar-box {
   text-align: center;
   padding: 1rem;
   border: 1px solid black;
-  margin: 1rem;
+  box-shadow: .25em .25em black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   background: linear-gradient(0deg, rgba(255,113,184,1) 0%, rgba(255,176,187,1) 10%, rgba(255,226,230,1) 30%, rgba(255,255,255,1) 100%);
 }
 #main-text {
   margin: 1rem;
+  font-size: 1.5em
+}
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 1em;
+  }
+  main {
+    height: 70%;
+  }
+  #main-buttons {
+    height: 30%;
+  }
+  #content {
+    max-width: 100%;
+    margin: 0;
+  }
+  #sidebar {
+    width: 20%;
+  }
+  #header {
+    margin: 0;
+  }
+  #header-logo {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: .25rem;
+  }
+  .sidebar-box {
+    margin: .5rem;
+  }
+  #main-holder {
+    width: 60%;
+  }
+  #update-holder {
+    width: 20%
+  }
+  .button {
+    height: 31px;
+    margin: .25rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .85em;
+  }
 }
