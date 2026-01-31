@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "PC-98";
+    src: url("fonts/PC-98-Regular.woff2") format("woff2"),
+    url("fonts/PC-98-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "PC-98";
+    src: url("fonts/PC-98-Bold.woff2") format("woff2"),
+    url("fonts/PC-98-Bold.woff") format("woff");
+    font-weight: bold;
+}
+body {
+    font-family: "PC-98";
+}
+.centered-container {
+  text-align: center;
+}
