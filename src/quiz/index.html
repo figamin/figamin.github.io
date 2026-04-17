@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BLOCKLIST guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      line-height: 1.6;
+      background-color: black;
+      color: white;
+    }
+    h1 { text-align: center; }
+    .question { margin: 8px 0; }
+    button {
+      background-color: black;
+      color: white;
+      margin: 0 auto;
+      padding: 10px 20px;
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+    }
+    #score {
+      margin-top: 20px;
+      margin-bottom: 50px;
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      min-height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>BLOCKLIST guide for PM fans so you can stay away from fans of PEDO media:</h1>
+<p>Based on a <a href="https://xcancel.com/i/status/2044773215092846828">xitter post</a>.</p>
+<form id="testForm">
+  <div id="questions"></div>
+</form>
+  <button type="button" onclick="calculateScore()">Calculate Score</button>
+
+<div id="score"></div>
+
+<script src="/static/questions.js"></script>
+</body>
+</html>
